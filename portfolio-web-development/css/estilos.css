@@ -23,4 +23,13 @@ h4,
 h5,
 h6 {
   font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 1.5;
+  text-decoration: dashed;
+  text-transform: uppercase;
 }
