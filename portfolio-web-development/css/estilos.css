@@ -83,8 +83,11 @@ h1 strong {
 }
 
 .flexbox {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  height: 200px;
+  justify-content: center;
 }
 
 .box {
