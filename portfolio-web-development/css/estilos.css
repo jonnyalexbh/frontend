@@ -31,6 +31,7 @@ h1 {
   font-size: 40px;
   letter-spacing: -0.2px;
   line-height: 1.5;
+  margin: 0;
   text-decoration: dashed;
   text-transform: uppercase;
 }
@@ -51,6 +52,7 @@ h1 strong {
 .project {
   border: 1px solid gray;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .project-details {
