@@ -48,6 +48,11 @@ h1 strong {
   height: 300px;
 }
 
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
 .project-details {
   height: 100px;
   width: 500px;
