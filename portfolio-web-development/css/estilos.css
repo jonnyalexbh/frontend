@@ -75,25 +75,40 @@ h1 strong {
 .header {
   background-color: #1B2127;
   color: white;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
 }
 
 .header a {
+  align-items: center;
   color: white;
+  display: flex;
+  height: inherit;
+  padding: 0 10px;
   text-decoration: none;
 }
 
-.flexbox {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 200px;
-  justify-content: center;
+.menu {
+  height: inherit;
 }
 
-.box {
-  border: 1px solid red;
-  flex-shrink: 0;
-  height: 50px;
-  margin: 5px;
-  width: 50px;
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
 }
