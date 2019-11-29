@@ -33,3 +33,16 @@ h1 {
   text-decoration: dashed;
   text-transform: uppercase;
 }
+
+.hero {
+  height: 300px;
+}
+
+.project-details {
+  height: 100px;
+  width: 500px;
+}
+
+.project-image-container {
+  width: 500px;
+}
