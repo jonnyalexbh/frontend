@@ -81,3 +81,16 @@ h1 strong {
   color: white;
   text-decoration: none;
 }
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid red;
+  flex-shrink: 0;
+  height: 50px;
+  margin: 5px;
+  width: 50px;
+}
