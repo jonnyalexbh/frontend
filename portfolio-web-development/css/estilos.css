@@ -207,3 +207,70 @@ figure {
   padding: 5px 20px;
   text-decoration: none;
 }
+
+.contact {
+  align-items: center;
+  background-color: #056FFF;
+  color: white;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.social {
+  border: 1px solid red;
+}
+
+.social-link {
+  border: 1px solid white;
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px;
+  width: 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+  background-size: 50px 50px;
+}
+
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+  background-size: 50px 50px;
+}
+
+.social-link.github {
+  background-image: url('../images/github.svg');
+  background-size: 50px 50px;
+}
+
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+  background-size: 50px 50px;
+}
+
+.form-email input {
+  background-image: url('../images/envelope.svg');
+  background-position-x: 5px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+}
+
+.form-email button {
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
