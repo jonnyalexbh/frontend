@@ -162,3 +162,48 @@ figure {
 .footer a {
   color: white;
 }
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-list-title {
+  margin-left: 20px;
+}
+
+.event {
+  background-color: #F4FBFF;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin: 10px;
+  overflow: hidden;
+  width: 480px;
+}
+
+.event img {
+  height: 200px;
+  object-fit: cover;
+  width: 480px;
+}
+
+.event-detail {
+  background-color: white;
+  margin: 20px 40px;
+  margin-top: -40px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  border: 1px solid;
+  border-radius: 5px;
+  color: #056FFF;
+  padding: 5px 20px;
+  text-decoration: none;
+}
