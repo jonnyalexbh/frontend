@@ -1,0 +1,43 @@
+body {
+  background: #F96;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF5E62, #F96);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF5E62, #F96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  height: calc( 100vh - 20px );
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px 30px 0 30px;
+}
+h1,
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+
+.container-flex {
+  border: 3px solid black;
+  display: flex;
+  /* flex direction */
+  flex-direction: column-reverse;
+}
+
+.element-flex {
+  background-color: #E53935;
+  padding: 10px;
+}
+
+.element-flex:nth-child(2) {
+  background-color: #8E24AA;
+}
+
+.element-flex:nth-child(3) {
+  background-color: #3F51B5;
+}
