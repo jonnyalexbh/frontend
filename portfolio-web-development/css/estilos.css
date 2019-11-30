@@ -53,12 +53,14 @@ h2 {
 .hero {
   align-items: center;
   background-color: #1B2127;
-  background-image: url('../images/hero.jpg');
   background-position-x: right;
-  background-repeat: no-repeat;
-  background-size: 500px 300px;
   display: flex;
   height: 300px;
+  justify-content: space-between;
+}
+
+.hero img {
+  object-fit: cover;
 }
 
 .portfolio {
@@ -273,4 +275,14 @@ figure {
 
 .form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  align-items: inherit;
+  display: inherit;
+  flex-wrap: inherit;
+  height: inherit;
+  justify-content: inherit;
+  margin: 0 auto;
+  width: 1000px;
 }
