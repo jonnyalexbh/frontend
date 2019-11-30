@@ -26,7 +26,11 @@ h2 {
   border: 3px solid black;
   display: flex;
   /* flex direction */
-  flex-direction: column-reverse;
+  flex-direction: row;
+  /* flex-flow - shortcut of flex-direction &  flex-wrap */
+  flex-flow: row wrap;
+  /* flex-wrap */
+  flex-wrap: wrap;
 }
 
 .element-flex {
