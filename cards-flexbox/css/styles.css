@@ -4,13 +4,20 @@ body {
 }
 
 .contenedor {
-  border: 3px solid green;
   margin: 0 auto;
   max-width: 1100px;
 }
 
 h2 {
   flex: 0 1 100%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  margin: 0;
 }
 
 img {
@@ -32,4 +39,33 @@ img {
   .entrada {
     flex: 0 1 calc(33% - 1rem);
   }
+}
+
+.entrada {
+  margin-bottom: 1rem;
+}
+
+.contenido {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenido span {
+  color: #DB008D;
+}
+
+.contenido h3 {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.boton {
+  background-color: #008FD1;
+  color: white;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  text-decoration: none;
 }
