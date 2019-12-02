@@ -1,0 +1,23 @@
+body {
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  border: 3px solid green;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+h2 {
+  flex: 0 1 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenido-principal {
+  display: flex;
+  flex-wrap: wrap;
+}
