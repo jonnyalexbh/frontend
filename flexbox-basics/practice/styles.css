@@ -50,20 +50,25 @@ h2 {
 }
 
 .contenedor-flex {
-  margin-top: 20px;
   /* Flex aqui*/
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 @media screen and (min-width:768px) {
   .contenedor-flex {
     /* Flex aqui*/
+    flex-direction: row;
   }
 }
 
 .principal {
   /* Flex aqui*/
+  order: 2;
 }
 aside {
   /* flex aqui*/
+  margin-bottom: 1rem;
 }
 
 aside {
@@ -72,9 +77,13 @@ aside {
 @media screen and (min-width:768px) {
   .principal {
     /* Flex aqui*/
+    flex: 0 1 60%;
+    margin-right: 1rem;
+    order: unset;
   }
   aside {
     /* Flex aqui*/
+    flex: 1;
   }
 }
 .servicios {
