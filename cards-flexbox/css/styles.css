@@ -17,7 +17,19 @@ img {
   max-width: 100%;
 }
 
-.contenido-principal {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width:480px) {
+  .contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .entrada {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .entrada {
+    flex: 0 1 calc(33% - 1rem);
+  }
 }
