@@ -23,6 +23,8 @@ h2 {
 }
 
 .container-flex {
+  /* align elements vertically */
+  align-items: flex-end;
   border: 3px solid black;
   display: flex;
   /* flex direction */
@@ -31,10 +33,13 @@ h2 {
   flex-flow: row wrap;
   /* flex-wrap */
   flex-wrap: wrap;
+  height: 250px;
+  /* align elements */
+  justify-content: space-between;
 }
 
 .element-flex {
-  flex: 1 1 400px;
+  height: 60px;
   padding: 10px;
 }
 
