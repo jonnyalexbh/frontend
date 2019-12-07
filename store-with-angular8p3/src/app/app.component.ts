@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'store with angular 8p3';
+  items = ['Tankis', 'Jose Miguel', 'Leonardo'];
+
+  addItem() {
+    this.items.push('new item');
+  }
+
+  deleteItem(index: number) {
+    this.items.splice(index, 1)
+  }
 }

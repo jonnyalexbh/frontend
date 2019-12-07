@@ -4,3 +4,13 @@
 <div *ngIf="title === 'angular'">
   this is a div
 </div>
+
+<button (click)="addItem()">Add item</button>
+
+<ul>
+  <li *ngIf="items.length === 0">the list is empty</li>
+  <li *ngFor="let name of items index as i">
+    {{ name }} {{ i }}
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+</ul>
