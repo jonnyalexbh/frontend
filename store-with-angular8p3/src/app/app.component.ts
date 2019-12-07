@@ -4,7 +4,7 @@ import { Product } from './product.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = '';
@@ -60,7 +60,7 @@ export class AppComponent {
   }
 
   deleteItem(index: number) {
-    this.items.splice(index, 1)
+    this.items.splice(index, 1);
   }
 
   clickProduct(id: number) {
