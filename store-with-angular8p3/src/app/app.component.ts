@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'store-with-angular8p3';
+  title = 'store with angular 8p3';
 }
