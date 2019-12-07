@@ -7,7 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'store with angular 8p3';
+  title = '';
   items = ['Tankis', 'Jose Miguel', 'Leonardo'];
 
   products: Product[] = [
