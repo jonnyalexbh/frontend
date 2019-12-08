@@ -7,12 +7,26 @@
 
 .product-grid {
   display: grid;
+  grid-gap: 50px 20px;
   grid-template-columns: repeat(1, 1fr);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+    max-width: 1110px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -21,6 +35,6 @@ body {
   height: 100%;
 }
 body {
-  font-family: Roboto, 'Helvetica Neue', sans-serif; 
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
 }
