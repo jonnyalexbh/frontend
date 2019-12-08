@@ -13,10 +13,10 @@ export class ProductsService {
   ) { }
 
   getAllProducts() {
-    return this.http.get<Product[]>(environment.url_api);
+    return this.http.get<Product[]>(`${environment.url_api}/products`);
   }
 
   getProduct(id: string) {
-    return this.http.get<Product>(`${environment.url_api}${id}`);
+    return this.http.get<Product>(`${environment.url_api}/products/${id}`);
   }
 }
