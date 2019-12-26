@@ -1,0 +1,9 @@
+$green: green;
+$blue: blue;
+
+.div {
+  color: $blue;
+}
+
+@import 'colors';
+@import 'tables';
