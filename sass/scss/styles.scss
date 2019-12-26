@@ -1,9 +1,2 @@
-$green: green;
-$blue: blue;
-
-.div {
-  color: $blue;
-}
-
-@import 'colors';
+@import 'lib/variables';
 @import 'tables';
