@@ -3,3 +3,11 @@ section {
   @include max-width;
   padding: $padding;
 }
+
+.max-width--huge {
+  @include max-width(1200px);
+}
+
+header {
+  background-color: $color-brand;
+}
