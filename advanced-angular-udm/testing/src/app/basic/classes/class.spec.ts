@@ -1,13 +1,22 @@
 import { Player } from './class';
 
 describe('class tests', () => {
-
-  // beforeAll();
-  // beforeEach();
-  // afterAll();
-  // afterEach();
-
   const player = new Player();
+
+  beforeAll(() => {
+    // console.log('beforeAll');
+  });
+  beforeEach(() => {
+    // console.log('beforeEach');
+  });
+  afterAll(() => {
+    // console.log('afterAll');
+  });
+  afterEach(() => {
+    player.hp = 100;
+    // console.log('afterEach');
+  });
+
   it('should return 80 hp, if it takes 20 damage', () => {
     // const player = new Player();
     const resp = player.takeDamage(20);
@@ -17,5 +26,10 @@ describe('class tests', () => {
     // const player = new Player();
     const resp = player.takeDamage(50);
     expect(resp).toBe(50);
+  });
+  it('should return 0 hp, if it takes 100 damage', () => {
+    // const player = new Player();
+    const resp = player.takeDamage(100);
+    expect(resp).toBe(0);
   });
 });
