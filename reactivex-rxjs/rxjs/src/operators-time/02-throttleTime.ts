@@ -1,11 +1,11 @@
-import { fromEvent } from 'rxjs';
-import { debounceTime, pluck, distinctUntilChanged } from 'rxjs/operators';
+import { fromEvent, asyncScheduler } from 'rxjs';
+import { throttleTime, pluck, distinctUntilChanged } from 'rxjs/operators';
 
 const click$ = fromEvent(document, 'click');
 
 click$
-  .pipe(debounceTime(3000))
-  .subscribe(console.log);
+  .pipe(throttleTime(3000))
+//.subscribe(console.log);
 
 // example 2
 
@@ -16,7 +16,10 @@ const input$ = fromEvent(input, 'keyup');
 
 input$
   .pipe(
-    debounceTime(1000),
+    throttleTime(1000, asyncScheduler, {
+      leading: false,
+      trailing: true
+    }),
     pluck('target', 'value'),
     distinctUntilChanged()
   )
