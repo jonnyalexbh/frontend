@@ -1,5 +1,11 @@
-import { from } from "rxjs";
+import { of, from } from "rxjs";
 import { distinctUntilChanged } from "rxjs/operators";
+
+const numbers$ = of<number | string>(1, 1, 1, 3, '1', 3, 2, 2, 4, 4, 5, 3, 1);
+
+numbers$
+  .pipe(distinctUntilChanged())
+  .subscribe(console.log);
 
 interface Heroe {
   name: string
