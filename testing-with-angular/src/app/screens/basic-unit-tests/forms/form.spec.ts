@@ -22,7 +22,6 @@ describe('forms', () => {
   it('mail should be valid', () => {
     const control = component.form.get('email');
     control.setValue('jonny@gmail.com');
-    console.log(control.valid);
     expect(control.valid).toBeTruthy();
   });
 });
