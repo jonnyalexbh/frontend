@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SampleUserComponent implements OnInit {
 
   title = 'user status';
+  total = 100;
   stateUser = false;
 
   constructor() { }
@@ -17,6 +18,10 @@ export class SampleUserComponent implements OnInit {
 
   activateUser(): void {
     this.stateUser = !this.stateUser;
+  }
+
+  subtract(value) {
+    this.total -= value;
   }
 
 }

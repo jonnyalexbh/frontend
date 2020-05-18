@@ -40,4 +40,17 @@ describe('SampleUserComponent', () => {
     expect(elem.innerHTML).toContain('Show Title');
   });
 
+  it('should show a message when you click button <show message> queryAll', () => {
+    const buttons = fixture.debugElement.queryAll(By.css('.btn-show-message'));
+    buttons[0].triggerEventHandler('click', null);
+    expect(component.total).toBe(95);
+  });
+
+  it('should show a message when you click button <show message> query', () => {
+    const button = fixture.debugElement.query(By.css('.btn-show-message'));
+    button.triggerEventHandler('click', null);
+    button.triggerEventHandler('click', null);
+    expect(component.total).toBe(90);
+  });
+
 });
