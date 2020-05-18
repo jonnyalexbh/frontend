@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleUserComponent implements OnInit {
 
-  stateUser: boolean = false;
+  title = 'user status';
+  stateUser = false;
 
   constructor() { }
 

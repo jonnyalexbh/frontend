@@ -1,3 +1,4 @@
+import { By } from '@angular/platform-browser';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SampleUserComponent } from './sample-user.component';
@@ -30,6 +31,13 @@ describe('SampleUserComponent', () => {
   it('should activate the user', () => {
     component.activateUser();
     expect(component.stateUser).toBeTruthy();
+  });
+
+  it('should show component title in h2', () => {
+    component.title = 'Show Title';
+    fixture.detectChanges();
+    const elem: HTMLElement = fixture.debugElement.query(By.css('h2')).nativeElement;
+    expect(elem.innerHTML).toContain('Show Title');
   });
 
 });
